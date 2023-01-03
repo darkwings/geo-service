@@ -16,8 +16,8 @@ public class MockGeoService extends GeoService {
         return Uni.createFrom().item(() ->
                 List.of(new CountryView(
                         "it",
-                                "italia", "39"),
+                                "italia", "39", false),
                         new CountryView("de",
-                                "germania", "49")));
+                                "germania", "49", false)));
     }
 }

@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 
 public record CountryView(@JsonProperty("country_id") String countryId,
-                          @JsonProperty("name") String name,
-                          @JsonProperty("phone_code") String phoneCode) {
+                          @JsonProperty String name,
+                          @JsonProperty("phone_code") String phoneCode,
+                          @JsonProperty boolean deleted) {
 }

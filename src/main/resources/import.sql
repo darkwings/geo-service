@@ -1,6 +1,6 @@
-INSERT INTO `geo-service`.Country(id, country_id, phone_code) VALUES (1, 'it', '39');
-INSERT INTO `geo-service`.Country(id, country_id, phone_code) VALUES (2, 'es', '49');
-INSERT INTO `geo-service`.Country(id, country_id, phone_code) VALUES (3, 'de', '34');
+INSERT INTO `geo-service`.Country(id, country_id, phone_code, deleted) VALUES (1, 'it', '39', 0);
+INSERT INTO `geo-service`.Country(id, country_id, phone_code, deleted) VALUES (2, 'es', '49', 0);
+INSERT INTO `geo-service`.Country(id, country_id, phone_code, deleted) VALUES (3, 'de', '34', 0);
 
 INSERT INTO `geo-service`.localized_data(id, language_id, data) VALUES (1, 'it', 'italia');
 INSERT INTO `geo-service`.localized_data(id, language_id, data) VALUES (2, 'en', 'italy');

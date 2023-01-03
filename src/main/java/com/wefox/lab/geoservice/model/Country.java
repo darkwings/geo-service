@@ -34,6 +34,9 @@ public class Country extends PanacheEntity {
     @JsonProperty("phone_code")
     private String phoneCode;
 
+    @JsonProperty
+    private boolean deleted;
+
     public Country() {
     }
 
@@ -53,5 +56,9 @@ public class Country extends PanacheEntity {
 
     public String getPhoneCode() {
         return phoneCode;
+    }
+
+    public boolean isDeleted() {
+        return deleted;
     }
 }

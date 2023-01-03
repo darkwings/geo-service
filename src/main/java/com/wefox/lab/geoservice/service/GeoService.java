@@ -29,7 +29,8 @@ public class GeoService {
                         .findFirst().ifPresent(localizedData ->
                                 list.add(new CountryView(country.getCountryId(),
                                         localizedData.getData(),
-                                        country.getPhoneCode())));
+                                        country.getPhoneCode(),
+                                        country.isDeleted())));
             });
             return list;
         });

@@ -1,10 +1,11 @@
 package com.wefox.lab.localization;
 
-import com.wefox.lab.geoservice.model.Country;
 import io.quarkus.hibernate.reactive.panache.PanacheEntity;
 
-import javax.persistence.*;
-import java.util.Set;
+import javax.persistence.Cacheable;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 @Entity
 @Cacheable
